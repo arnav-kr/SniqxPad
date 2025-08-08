@@ -3,7 +3,17 @@
 
 A Versatile Macro Pad with a rotary encoder and OLED display.
 
-![sniqx_pad](images/sniqx_pad.png)
+<table>
+  <tr>
+    <td>
+      <img src="images/sniqx_pad.png" alt="Sniqx Pad" width="500"/>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/335b4143-3be4-466b-bec2-c9d216802052" alt="Sniqx Pad" width="500"/>
+    </td>
+  </tr>
+</table>
+
 
 ![Components](images/components.png)
 
