@@ -8,3 +8,6 @@ OLED_TRANSPORT = i2c
 # Rotary Encoder
 ENCODER_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
+
+# VIA Support
+VIA_ENABLE = yes

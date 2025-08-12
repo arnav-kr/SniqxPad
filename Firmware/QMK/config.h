@@ -1,2 +1,9 @@
-#define ENCODER_A_PINS { GP0 }
-#define ENCODER_B_PINS { GP1 }
+#define ENCODER_A_PINS {GP0}
+#define ENCODER_B_PINS {GP1}
+
+#define I2C_DRIVER I2CD1
+#define I2C1_SDA_PIN GP6
+#define I2C1_SCL_PIN GP7
+
+#define OLED_DISPLAY_WIDTH 128
+#define OLED_DISPLAY_HEIGHT 32

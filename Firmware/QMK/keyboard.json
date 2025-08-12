@@ -16,18 +16,27 @@
         "cols": ["GP26", "GP27", "GP28", "GP29"],
         "rows": ["GP2", "GP4", "GP3"]
     },
+    "bootmagic": {
+    "matrix": [0, 0]
+    },
     "processor": "RP2040",
     "url": "",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "pid": "0x5350",
+        "vid": "0x414B"
     },
+    "layers": [
+    "Base",
+    "Game",
+    "Media",
+    "Tools"
+   ],
     "layouts": {
-        "LAYOUT_ortho_4x4": {
+        "LAYOUT_ortho_3x4": {
             "layout": [
-                {"matrix": [0, 2], "x": 2, "y": 0},
-                {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [0, 0], "x": 2, "y": 0},
+                {"matrix": [0, 1], "x": 3, "y": 0},
                 {"matrix": [1, 0], "x": 0, "y": 1},
                 {"matrix": [1, 1], "x": 1, "y": 1},
                 {"matrix": [1, 2], "x": 2, "y": 1},
