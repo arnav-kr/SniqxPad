@@ -1,0 +1,95 @@
+[keyboard]
+name = "SniqxPad"
+product_name = "Sniqx Pad"
+vendor_id = 0x414B
+product_id = 0x5350
+manufacturer = "Arnav Kumar"
+chip = "rp2040"
+
+[matrix]
+row_pins = ["PIN_2", "PIN_4", "PIN_3"]
+col_pins = ["PIN_26", "PIN_27", "PIN_28", "PIN_29"]
+bootmagic = [0, 0]
+
+[[input_device.encoder]]
+pin_a = "PIN_0"
+pin_b = "PIN_1"
+internal_pullup = true
+phase = "resolution"
+resolution = 4
+reverse = true
+debounce_ms = 10
+
+[display]
+driver = "ssd1306"
+size = "128x32"
+rotation = 180
+renderer = "crate::SniqxRenderer"
+min_render_interval = 10
+render_interval = 100
+[display.protocol.i2c]
+instance = "I2C1"
+sda = "PIN_6"
+scl = "PIN_7"
+
+[host]
+vial_enabled = true
+rynk_enabled = false
+unlock_keys = [[0, 0], [0, 1]]
+insecure = false
+
+[storage]
+enabled = true
+clear_storage = true
+
+[layout]
+rows = 3
+cols = 4
+map = """
+[2.0] (0,0) (0,1) (e,0)
+(1,0) (1,1) (1,2) (1,3)
+(2,0) (2,1) (2,2) (2,3)
+"""
+
+[keymap]
+layers = 5
+
+[[keymap.layer]]
+keys = """
+TO(1) LT(4, P)
+Escape D I Enter
+H J K L
+"""
+encoders = [["MouseWheelDown", "MouseWheelUp"]]
+
+[[keymap.layer]]
+keys = """
+TO(2) LT(4, Escape)
+LShift Q W E
+LCtrl A S D
+"""
+encoders = [["MouseWheelDown", "MouseWheelUp"]]
+
+[[keymap.layer]]
+keys = """
+TO(3) MO(4)
+MediaPlayPause MediaPrevTrack MediaNextTrack AudioVolUp
+AudioMute _ _ AudioVolDown
+"""
+encoders = [["AudioVolDown", "AudioVolUp"]]
+
+[[keymap.layer]]
+keys = """
+TO(0) MO(4)
+_ _ _ _
+_ _ _ Bootloader
+"""
+encoders = [["BrightnessDown", "BrightnessUp"]]
+
+[[keymap.layer]]
+keys = """
+_ _
+_ _ _ _
+_ _ _ _
+"""
+
