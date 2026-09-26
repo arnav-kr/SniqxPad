@@ -8,3 +8,5 @@ target = "thumbv6m-none-eabi" # Cortex-M0 and Cortex-M0+
 [env]
 DEFMT_LOG = "info"
 KEYBOARD_TOML_PATH =  { value = "keyboard.toml", relative = true }
+EMBASSY_USB_MAX_INTERFACE_COUNT = "8"
+EMBASSY_USB_MAX_HANDLER_COUNT = "8"

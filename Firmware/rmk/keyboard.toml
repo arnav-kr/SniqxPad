@@ -52,11 +52,11 @@ map = """
 """
 
 [keymap]
-layers = 5
+layers = 6
 
 [[keymap.layer]]
 keys = """
-TO(1) LT(4, P)
+TO(1) LT(5, P)
 Escape D I Enter
 H J K L
 """
@@ -64,7 +64,7 @@ encoders = [["MouseWheelDown", "MouseWheelUp"]]
 
 [[keymap.layer]]
 keys = """
-TO(2) LT(4, Escape)
+TO(2) LT(5, Escape)
 LShift Q W E
 LCtrl A S D
 """
@@ -72,7 +72,7 @@ encoders = [["MouseWheelDown", "MouseWheelUp"]]
 
 [[keymap.layer]]
 keys = """
-TO(3) MO(4)
+TO(3) MO(5)
 MediaPlayPause MediaPrevTrack MediaNextTrack AudioVolUp
 AudioMute _ _ AudioVolDown
 """
@@ -80,11 +80,19 @@ encoders = [["AudioVolDown", "AudioVolUp"]]
 
 [[keymap.layer]]
 keys = """
-TO(0) MO(4)
+TO(4) MO(5)
 _ _ _ _
 _ _ _ Bootloader
 """
 encoders = [["BrightnessDown", "BrightnessUp"]]
+
+[[keymap.layer]]
+keys = """
+TO(0) No
+No No No No
+No No No No
+"""
+encoders = [["No", "No"]]
 
 [[keymap.layer]]
 keys = """

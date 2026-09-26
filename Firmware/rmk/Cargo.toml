@@ -30,6 +30,11 @@ defmt-rtt = "1"
 panic-probe = { version = "1", features = ["print-defmt"] }
 embedded-graphics = "0.8"
 heapless = "0.8"
+embassy-usb = "0.6"
+embassy-futures = "0.1"
+static_cell = "2.1"
+embassy-net = { version = "0.7", features = ["tcp", "udp", "dhcpv4", "medium-ethernet", "proto-ipv4", "dns"] }
+usbd-hid = "0.10"
 
 [build-dependencies]
 xz2 = "0.1.7"
@@ -44,10 +49,10 @@ bench = false
 [profile.dev]
 codegen-units = 1
 debug = true
-opt-level = 1
-overflow-checks = true
-lto = false
-panic = 'unwind'
+opt-level = "z"
+overflow-checks = false
+lto = "fat"
+panic = 'abort'
 
 [profile.release]
 codegen-units = 1
